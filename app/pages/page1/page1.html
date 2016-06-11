@@ -1,0 +1,110 @@
+<ion-navbar *navbar primary>
+  
+  <ion-buttons start>
+    <button>
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+  <!--<ion-title>Generic</ion-title>-->
+  
+  <ion-segment [(ngModel)]="pet" white>
+    <ion-segment-button value="latest">
+      Latest
+    </ion-segment-button>
+    <ion-segment-button value="saved">
+      Saved
+    </ion-segment-button>
+  </ion-segment>
+  
+  <ion-buttons end>
+    <button>
+      <ion-icon name="search"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+</ion-navbar>
+<ion-content light>
+
+<!--<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Kittens
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Puppies
+    </ion-segment-button>
+  </ion-segment>
+</div>-->
+
+<!--<ion-toolbar white>
+  <ion-searchbar></ion-searchbar>  
+</ion-toolbar>-->
+
+<!--<ion-toolbar light>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Kittens
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Puppies
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>-->
+
+
+  
+  <!--<ion-card>
+    <img src="build/img/water.jpg"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>-->
+
+  <!--<ion-card>
+    <img src="build/img/equate.png"/>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="build/img/oreo.jpg"/>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>-->
+
+
+<ion-card>
+
+  <ion-item>
+    <!--<ion-avatar item-left>
+      <img src="build/img/oreo.jpg">
+    </ion-avatar>-->
+    <h2>Nabisco Oreo</h2>
+    <p>November 5, 1955</p>
+    <ion-note item-right>11h ago</ion-note>
+  </ion-item>
+
+  <img src="build/img/oreo.jpg">
+
+  <ion-card-content>
+  <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  </ion-card-content>
+
+  <ion-item>
+    <button primary clear item-left>
+      <ion-icon name="thumbs-up"></ion-icon>
+      <div>12 Likes</div>
+    </button>
+    <button danger clear item-left>
+      <ion-icon name="thumbs-down"></ion-icon>
+      <div>26 Dislikes</div>
+    </button>
+    <button warning clear item-left>
+      <ion-icon name="share"></ion-icon>
+      <div>Share</div>
+    </button>
+
+  </ion-item>
+
+</ion-card>
+</ion-content>
